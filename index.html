@@ -16,262 +16,274 @@
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="normalize.css">
 
-<style>
-
-header{
-    background-color: #000000;
-    position: fixed;
-    width: 100%;
-    height: 8vh;
-    text-align: center;
-    top: 0;
-    display: block;
-    z-index: 2;
-
-    
-}
-
-main>section>header{
-
-    background-color: #000000;
-  
-    width: 100%;
-    height: 8vh;
-    text-align: center;
-    top: 0;
-    position: sticky;
-    z-index: 1;
-    
-}
-
-main>section>header>h1{
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    justify-content: space-evenly; 
-    font-size: 13px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-body>main>section{
-
- 
-    height: 100vh;
-    position:relative;
-    background-color: rgb(43, 209, 66);
-    
-    
-}
-body>header>nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    justify-content: space-evenly; 
-    color: rgb(255, 255, 255); 
-}
-body>header>nav >ul>li {
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-    margin-top:6px ;
-}
-
-body>main>section:first-child>div:first-child>hgroup>h1{
-
-color: chartreuse;
-position: absolute;
-top: 15%;
-left: 6%;
-}
-
-body>main>section:first-child>div:first-child>hgroup>h3{
-
-color: rgb(255, 255, 255);
-position: absolute;
-top: 30%;
-left: 10%;
-}
-
-body>main>section:first-child>div>article{
-
-color: rgb(255, 255, 255);
-position: absolute;
-top: 45%;
-left: 10%;
-}
-
-body>main{
-    width: 100%;
-    height: 100%;
-position: relative;
-background-color: aqua;
-
-}
- 
-
-
-#homeImage{
+    <style>
+        header {
+            background-color: #000000;
+            position: fixed;
+            width: 100%;
+            height: 8vh;
+            text-align: center;
+            top: 0;
+            display: block;
+            z-index: 10;
 
-    width:40%;
-    height: 50%;
-    position: absolute;
-    top:0;
-    right: 0;
 
-}
+        }
 
-body>main>section:first-child>section{
-    width: 50%;
-    height: 10%;
-    position: absolute;
-    bottom: 0;
-    left: 3%;
-}
+        main>section>header {
 
+            background-color: #000000;
+
+            width: 100%;
+            height: 8vh;
+            text-align: center;
+            top: 0;
+            position: sticky;
+            z-index: 2;
 
-main>section:first-child>section{
+        }
 
+        main>section>header>h1 {
 
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    justify-content:space-between;
-    position: relative;
-    align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
-
-    
-}
+        body>main>section {
 
-main>section:first-child>section>div:first-child{
 
-width: 20%;
-height: 100%;
-position: absolute;
-bottom: 0;
-left: 0%;
+            height: 100vh;
+            position: relative;
+            background-color: rgb(43, 209, 66);
 
-
-
-}
 
-main>section:first-child>section>div:nth-child(2){
+        }
 
-width: 20%;
-height: 100%;
-position: absolute;
-bottom: 0;
-left: 10%;
+        body>header>nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(255, 255, 255);
+        }
 
-}
+        body>header>nav>ul>li {
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+            margin-top: 6px;
+        }
 
-main>section:first-child>section>div:nth-child(3){
+        body>main>section:first-child>div:first-child>hgroup>h1 {
 
-width: 20%;
-height: 100%;
-position: absolute;
-bottom: 0;
-left: 20%;
+            color: chartreuse;
+            position: absolute;
+            top: 15%;
+            left: 6%;
+        }
 
-}
+        body>main>section:first-child>div:first-child>hgroup>h3 {
 
-main>section:first-child>section>div:nth-child(4){
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
 
-width: 20px;
-height:20px;
-position: absolute;
-bottom: 35%;
-left: 30%;
-background-color: white;
+        body>main>section:first-child>div>article {
 
-}
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 45%;
+            left: 10%;
+        }
 
-main>section:first-child>section>div:nth-child(5){
+        body>main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: aqua;
 
-    width: 20px;
-height:20px;
-position: absolute;
-bottom: 35%;
-left: 40%;
-background-color: white;
+        }
 
-}
 
-main>section:nth-child(2)>div:first-child{
- width: 30%;
- height: 15%;
- position: absolute;
- top: 0;
- left: 40%;
 
-}
+        #homeImage {
 
-main>section:nth-child(2)>div:nth-child(2){
- width: 80%;
- height: 40%;
- position: absolute;
- top: 20%;
- left: 20%;
-font-size: 10px;
-}
+            width: 40%;
+            height: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
 
-main>section:nth-child(2)>section>div>article{
- width: 50%;
- height: 40%;
- position: absolute;
- top: 40%;
- left: 20%;
-font-size: 8px;
-}
+        }
 
-main>section:nth-child(2)>section>div:nth-child(2){
- width: 50%;
- height: 40%;
- position: absolute;
- bottom: 0;
- left: 20%;
-font-size: 8px;
-}
+        body>main>section:first-child>section {
+            width: 50%;
+            height: 10%;
+            position: absolute;
+            bottom: 0;
+            left: 3%;
+        }
 
-#CV{
-    width: 20%;
- height: 10%;
- position: absolute;
- bottom:25%;
- right: 30%;
- background-color: rgb(10, 205, 240);
- font-size: 16px;
 
+        main>section:first-child>section {
 
-}
 
-main>section:nth-child(2)>section>div:nth-child(3){
- width: max-content;
- height: 40%;
- position: absolute;
- top:0%;
- right: 0%;
- 
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            justify-content: space-between;
+            position: relative;
+            align-items: center;
 
-}
 
 
+        }
 
+        main>section:first-child>section>div:first-child {
 
+            width: 20%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0%;
 
 
 
+        }
 
+        main>section:first-child>section>div:nth-child(2) {
 
+            width: 20%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 10%;
 
+        }
 
-</style>
+        main>section:first-child>section>div:nth-child(3) {
+
+            width: 20%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+
+        }
+
+        main>section:first-child>section>div:nth-child(4) {
+
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            bottom: 35%;
+            left: 30%;
+            background-color: white;
+
+        }
+
+        main>section:first-child>section>div:nth-child(5) {
+
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            bottom: 35%;
+            left: 40%;
+            background-color: white;
+
+        }
+
+        main>section:nth-child(2)>div:first-child {
+            width: 30%;
+            height: 15%;
+            position: absolute;
+            top: 0;
+            left: 40%;
+
+        }
+
+        main>section:nth-child(2)>div:nth-child(2) {
+            width: 80%;
+            height: 40%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            font-size: 10px;
+        }
+
+        main>section:nth-child(2)>section>div>article {
+            width: 50%;
+            height: 40%;
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            font-size: 8px;
+        }
+
+        main>section:nth-child(2)>section>div:nth-child(2) {
+            width: 50%;
+            height: 40%;
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            font-size: 8px;
+        }
+
+        #CV {
+            width: 25%;
+            height: 10%;
+            position: absolute;
+            bottom: 27%;
+            right: 17%;
+            background-color: rgb(10, 205, 240);
+            font-size: 16px;
+            z-index: 1;
+            border-radius: 10px;
+
+
+        }
+
+        main>section:nth-child(2)>section>div:nth-child(3) {
+            width: max-content;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            z-index: 2;
+          
+            overflow: hidden;
+
+        }
+
+
+
+        main>section:nth-child(2)>section>div:nth-child(4)>nav>p {
+
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+
+            color: bisque;
+
+
+        }
+    </style>
 
 </head>
 
@@ -290,126 +302,135 @@ main>section:nth-child(2)>section>div:nth-child(3){
     </header>
 
     <main>
-    <section>  
-        
-   
-        <div>
-            <hgroup>
-                <h1>Hello</h1>
-                <h3>I ’am  Maduranga Sadaruwan <br>
-                    Full stack developer .
-                </h3>
-            </hgroup>
+        <section>
 
-            <article><p>Welcome to my personal website! Join me in exploring <br>
-                the vast and exciting digital world through the lens of <br>
-                of a passionate software engineer.
-            </p>
-            </article>
-
-        </div>
-
-        <dev id="homeImage"><img  width="230" src="images/maduranga1.png" alt="This is home image">
-        </dev>
-
-
-        <section >
-
-
-            <div>
-                <img usemap="#facebook" width="20" src="images/facebook.png"   alt="facebook icon">
-
-            </div>
-
-            <div>
-                <img  width="20" src="images/whatsapp.png" alt="">
-
-            </div>
-
-            <div>
-                <img usemap="#linkedIn" width="20" src="images/linkedIn.png" alt="">
-
-            </div>
-
-            <div>
-                <img  width="20" src="images/instergram.png" alt="">
-
-            </div>
-
-            <div>
-                <img usemap="#ijse"  width="20" src="images/github.png" alt="">
-
-            </div>
-
-
-            <map name ="git hub">
-                <area shape="circle" coords="0,0,50.50" href="https://github.com/maduranga1234" alt="git hub">
-           </map>
-
-           <map name ="facebook">
-            <area shape="rect" coords="0,0,50,50" href="https://www.facebook.com/maduranga.sadaruwan.357" alt="face book">
-          </map>
-
-          <map name ="linkedIn">
-            <area shape="rect" coords="0,0,50,50" href="https://www.linkedin.com/in/maduranga-sadaruwan-380b44268/" alt="linkedIn">
-          </map>
-        
-
-        </section>
-    </section>
-
-        <section> 
-
-            <header>
-                <h1 >About Me</h1>
-            </header>
-
-            <div >
-                
-            </div>
-          
 
             <div>
                 <hgroup>
-                    <h3>Who  am I ?</h3>
-                    <h4>I’am  Maduranga  Sadaruwan , a  Full stack developer  <br>
-                        from  Sri Lanka.</h4> 
+                    <h1>Hello</h1>
+                    <h3>I ’am Maduranga Sadaruwan <br>
+                        Full stack developer .
+                    </h3>
+                </hgroup>
+
+                <article>
+                    <p>Welcome to my personal website! Join me in exploring <br>
+                        the vast and exciting digital world through the lens of <br>
+                        of a passionate software engineer.
+                    </p>
+                </article>
+
+            </div>
+
+            <dev id="homeImage"><img width="230" src="images/maduranga1.png" alt="This is home image">
+            </dev>
+
+
+            <section>
+
+
+                <div>
+                    <img usemap="#facebook" width="20" src="images/facebook.png" alt="facebook icon">
+
+                </div>
+
+                <div>
+                    <img width="20" src="images/whatsapp.png" alt="">
+
+                </div>
+
+                <div>
+                    <img usemap="#linkedIn" width="20" src="images/linkedIn.png" alt="">
+
+                </div>
+
+                <div>
+                    <img width="20" src="images/instergram.png" alt="">
+
+                </div>
+
+                <div>
+                    <img usemap="#ijse" width="20" src="images/github.png" alt="">
+
+                </div>
+
+
+                <map name="git hub">
+                    <area shape="circle" coords="0,0,50.50" href="https://github.com/maduranga1234" alt="git hub">
+                </map>
+
+                <map name="facebook">
+                    <area shape="rect" coords="0,0,50,50" href="https://www.facebook.com/maduranga.sadaruwan.357"
+                        alt="face book">
+                </map>
+
+                <map name="linkedIn">
+                    <area shape="rect" coords="0,0,50,50"
+                        href="https://www.linkedin.com/in/maduranga-sadaruwan-380b44268/" alt="linkedIn">
+                </map>
+
+
+            </section>
+        </section>
+
+        <section>
+
+            <header>
+                <h1>About Me</h1>
+            </header>
+
+
+
+
+            <div>
+                <hgroup>
+                    <h3>Who am I ?</h3>
+                    <h4>I’am Maduranga Sadaruwan , a Full stack developer <br>
+                        from Sri Lanka.</h4>
                 </hgroup>
             </div>
 
-           <section id="paraphrase">
-            <div>
+            <section id="paraphrase">
+                <div>
 
-                <article>
-                    <p>Hello there! I'm an accomplished and passionate full stack developer from Sri Lanka. With an insatiable curiosity and drive for innovation, I merge code and creativity. Since entering the world of software engineering in 2022, I've been captivated by the evolving technology landscape. Equipped with a wide range of technical skills and expertise in both front-end and back-end development, I craft seamless experiences with pixels and data. From captivating user interfaces to robust server-side solutions, I strive to surpass expectations with every line of code.</p>
-                </article>
-            </div>
+                    <article>
+                        <p>Hello there! I'm an accomplished and passionate full stack developer from Sri Lanka. With an
+                            insatiable curiosity and drive for innovation, I merge code and creativity. Since entering
+                            the world of software engineering in 2022, I've been captivated by the evolving technology
+                            landscape. Equipped with a wide range of technical skills and expertise in both front-end
+                            and back-end development, I craft seamless experiences with pixels and data. From
+                            captivating user interfaces to robust server-side solutions, I strive to surpass
+                            expectations with every line of code.</p>
+                    </article>
+                </div>
 
-            <div>
-          <p>Name        :Maduranga Sadaruwan</p>
-          <p>Email        :madurangasadaruwan393</p>
-          <p>Age           :21</p>
-          <p>Address   :Ambalangoda,Sri Lanka</p>
-          <p>Contact     :  +94 765591043</p>
-          <p>Linked In :Maduranga sadaruwan</p>
-            </div>
-
-            
-            <div>
-                <img  width="230" src="images/abouth me.png" alt="Abouth me">
-
-            </div>
-
-            <div id="CV">
-
-                <nav><p>Download Cv</p></nav>
-
-            </div>
-
-           </section>
+                <div>
+                    <p>Name :Maduranga Sadaruwan</p>
+                    <p>Email :madurangasadaruwan393</p>
+                    <p>Age :21</p>
+                    <p>Address :Ambalangoda,Sri Lanka</p>
+                    <p>Contact : +94 765591043</p>
+                    <p>Linked In :Maduranga sadaruwan</p>
+                </div>
 
 
-           
+                <div>
+                    <img width="230" src="images/abouth me.png" alt="About me">
+
+                </div>
+
+                <div id="CV">
+
+                    <nav>
+                        <p>Download Cv</p>
+                    </nav>
+
+                </div>
+
+            </section>
+
+
+
 
         </section>
 
@@ -419,16 +440,21 @@ main>section:nth-child(2)>section>div:nth-child(3){
             <header>
                 <h1>Skills</h1>
             </header>
-           
+
             <section>
                 <div>
-                    <h3><b>Web  Development</b></h3>
-                    <p>I specialize in web development, creating visually stunning and user-friendly websites. With expertise in responsive design and seamless functionality, I bring digital experiences to life that captivate and engage users, leaving a lasting impact.</p>
+                    <h3><b>Web Development</b></h3>
+                    <p>I specialize in web development, creating visually stunning and user-friendly websites. With
+                        expertise in responsive design and seamless functionality, I bring digital experiences to life
+                        that captivate and engage users, leaving a lasting impact.</p>
                 </div>
 
                 <div>
                     <h3><b>UI/UX Designing</b></h3>
-                    <p>For UI/UX design, I excel in crafting captivating visual interfaces that prioritize user experience. With a keen eye for aesthetics and a deep understanding of user behavior, I create designs that seamlessly blend form and function. From wireframing to prototyping, I ensure every interaction is intuitive, engaging, and leaves a positive impression on users.
+                    <p>For UI/UX design, I excel in crafting captivating visual interfaces that prioritize user
+                        experience. With a keen eye for aesthetics and a deep understanding of user behavior, I create
+                        designs that seamlessly blend form and function. From wireframing to prototyping, I ensure every
+                        interaction is intuitive, engaging, and leaves a positive impression on users.
                         send
                         Send message
                         Checking who can access file</p>
@@ -436,13 +462,19 @@ main>section:nth-child(2)>section>div:nth-child(3){
 
                 <div>
                     <h3><b>Desktop Application</b></h3>
-                    <p>In the realm of desktop application development, I bring a meticulous approach to planning, design, and testing, ensuring seamless functionality and user-friendliness. With a passion for crafting exceptional user experiences, I strive to create desktop applications that go beyond expectations and leave a lasting impression.
+                    <p>In the realm of desktop application development, I bring a meticulous approach to planning,
+                        design, and testing, ensuring seamless functionality and user-friendliness. With a passion for
+                        crafting exceptional user experiences, I strive to create desktop applications that go beyond
+                        expectations and leave a lasting impression.
                     </p>
                 </div>
 
                 <div>
                     <h3><b>Mobile Application</b></h3>
-                    <p>In mobile application development, I specialize in creating captivating experiences with user-centric design. Through meticulous planning and innovative design, I engineer intuitive interfaces that empower seamless user engagement. Get ready to explore a world of transformative mobile experiences crafted with cutting-edge technology and exceptional design.</p>
+                    <p>In mobile application development, I specialize in creating captivating experiences with
+                        user-centric design. Through meticulous planning and innovative design, I engineer intuitive
+                        interfaces that empower seamless user engagement. Get ready to explore a world of transformative
+                        mobile experiences crafted with cutting-edge technology and exceptional design.</p>
 
                 </div>
             </section>
@@ -450,17 +482,17 @@ main>section:nth-child(2)>section>div:nth-child(3){
             <section>
                 <h3>Languages And Framework</h3>
 
-                 <img  width="20" src="images/java.png" alt="">
-                 <img  width="20" src="images/sql.png" alt="">
-                 <img  width="20" src="images/html.png" alt="">
-                 <img  width="20" src="images/javaScript.png" alt="">
-                 <img  width="20" src="images/css.png" alt="">
-                 <img  width="20" src="images/canva.png" alt="">
-                 <img  width="20" src="images/figma.png" alt="">
+                <img width="20" src="images/java.png" alt="">
+                <img width="20" src="images/sql.png" alt="">
+                <img width="20" src="images/html.png" alt="">
+                <img width="20" src="images/javaScript.png" alt="">
+                <img width="20" src="images/css.png" alt="">
+                <img width="20" src="images/canva.png" alt="">
+                <img width="20" src="images/figma.png" alt="">
 
-               
+
             </section>
-            
+
         </section>
 
 
@@ -469,13 +501,15 @@ main>section:nth-child(2)>section>div:nth-child(3){
             <header>
                 <h1>My recent Work</h1>
             </header>
-          
+
             <section>
-                <dev><img  width="190" src="images/Screenshot (196).png" alt=""></dev>
-                 <dev><img  width="230" src="images/Screenshot (196).png" alt=""></dev>
-                  <dev><img  width="190" src="images/Screenshot (196).png" alt=""></dev>
+                <dev><img width="190" src="images/Screenshot (196).png" alt=""></dev>
+                <dev><img width="230" src="images/Screenshot (196).png" alt=""></dev>
+                <dev><img width="190" src="images/Screenshot (196).png" alt=""></dev>
             </section>
-            <nav><p> all projects</p></nav  >
+            <nav>
+                <p> all projects</p>
+            </nav>
         </section>
 
 
@@ -484,10 +518,10 @@ main>section:nth-child(2)>section>div:nth-child(3){
             <header>
                 <h1>Assignment</h1>
             </header>
-          
+
             <section>
 
-       
+
                 <figure>
                     <figcaption>Assignment 01</figcaption>
                 </figure>
@@ -502,11 +536,13 @@ main>section:nth-child(2)>section>div:nth-child(3){
                 </figure>
             </section>
 
-            <div><p>See All Assignment</p></div>
+            <div>
+                <p>See All Assignment</p>
+            </div>
             <section>
-                
+
             </section>
-            
+
         </section>
 
 
@@ -515,22 +551,24 @@ main>section:nth-child(2)>section>div:nth-child(3){
             <header>
                 <h1> Education </h1>
             </header>
-      
 
-            <section><p>My Qualifications</p></section>
+
+            <section>
+                <p>My Qualifications</p>
+            </section>
             <section>
 
                 <div>
-                <hgroup>
-                    <h3>G.C.E
-                        Ordinary Level
-                        Examination
-                    </h3>
+                    <hgroup>
+                        <h3>G.C.E
+                            Ordinary Level
+                            Examination
+                        </h3>
 
-                    <h5>G/Sri Devananda college</h5>
-                    <h5>Ambalangoda</h5>
+                        <h5>G/Sri Devananda college</h5>
+                        <h5>Ambalangoda</h5>
 
-                </hgroup>    
+                    </hgroup>
                 </div>
 
                 <div>
@@ -540,11 +578,11 @@ main>section:nth-child(2)>section>div:nth-child(3){
                             Advanced Level
                             Examination
                         </h3>
-    
+
                         <h5>G/Sri Devananda college</h5>
                         <h5>Ambalangoda</h5>
-    
-                    </hgroup>    
+
+                    </hgroup>
 
                 </div>
 
@@ -557,27 +595,27 @@ main>section:nth-child(2)>section>div:nth-child(3){
                     <h5>Institute Of Software Engineering</h5>
                     <h6>(2022-2024)</h6>
 
-                </hgroup>    
+                </hgroup>
 
 
                 <div>
 
                     <hgroup>
-                        <h3>Software 
+                        <h3>Software
                             Engineering
                             Degree
-                            
+
                         </h3>
-    
+
                         <h5>University Of Moratuwa</h5>
                         <h6>(2024-2025)</h6>
-    
-                    </hgroup>    
-    
+
+                    </hgroup>
+
                 </div>
-              
+
             </section>
-            
+
         </section>
 
 
@@ -587,24 +625,24 @@ main>section:nth-child(2)>section>div:nth-child(3){
             <header>
                 <h1>Gallery</h1>
             </header>
-            
-           <section>
-                <dev><img  width="100" src="images/kandy.jpg" alt=""></dev>
-                <dev><img  width="130" src="images/gardmoor.jpg" alt=""></dev>
-                <dev><img  width="160" src="images/kandevihare.jpg" alt=""></dev>
-                <dev><img  width="130" src="images/thissa.jpg" alt=""></dev>
-                <dev><img  width="100" src="images/kandy2.jpg" alt=""></dev>
-           </section>
-                
-           <section>
-              <dev><img  width="100" src="images/nineArch.jpg" alt=""></dev>
-                <dev><img  width="130" src="images/withSister.jpg" alt=""></dev>
-                <dev><img  width="160" src="images/patna.jpg" alt=""></dev>
-                <dev><img  width="130" src="images/with Lahiru.jpg" alt=""></dev>
-                <dev><img  width="100" src="images/idalgashinna.jpg" alt=""></dev>
-           </section>
-               
-            
+
+            <section>
+                <dev><img width="100" src="images/kandy.jpg" alt=""></dev>
+                <dev><img width="130" src="images/gardmoor.jpg" alt=""></dev>
+                <dev><img width="160" src="images/kandevihare.jpg" alt=""></dev>
+                <dev><img width="130" src="images/thissa.jpg" alt=""></dev>
+                <dev><img width="100" src="images/kandy2.jpg" alt=""></dev>
+            </section>
+
+            <section>
+                <dev><img width="100" src="images/nineArch.jpg" alt=""></dev>
+                <dev><img width="130" src="images/withSister.jpg" alt=""></dev>
+                <dev><img width="160" src="images/patna.jpg" alt=""></dev>
+                <dev><img width="130" src="images/with Lahiru.jpg" alt=""></dev>
+                <dev><img width="100" src="images/idalgashinna.jpg" alt=""></dev>
+            </section>
+
+
         </section>
 
     </main>
@@ -612,51 +650,52 @@ main>section:nth-child(2)>section>div:nth-child(3){
 
     <footer>
         <h1>Contact</h1>
-        <aside><p>Let's Talk About Your Project</p>
-        <p>Contact Info.</p>
+        <aside>
+            <p>Let's Talk About Your Project</p>
+            <p>Contact Info.</p>
         </aside>
 
         <address>
 
-        <img  width="20" src="images/icons8-email-96.png" alt="">
-        <img  width="20" src="images/telephone-call.png" alt="">
-        <img  width="20" src="images/pin.png" alt="">
+            <img width="20" src="images/icons8-email-96.png" alt="">
+            <img width="20" src="images/telephone-call.png" alt="">
+            <img width="20" src="images/pin.png" alt="">
             <p>madurangasadaruwan393@gmail.com</p>
             <p>+94 765591043</p>
             <p>Galle Road Ambalangoda</p>
         </address>
 
-       <fieldset>
+        <fieldset>
 
-        <legend> </legend>
-            <form action="">  
+            <legend> </legend>
+            <form action="">
                 <aside>
-                    <div>  <input id="name" type="text"  placeholder="Name"> </div>
-                    <div> <input id="email" type="email"  placeholder="Email"> </div>
+                    <div> <input id="name" type="text" placeholder="Name"> </div>
+                    <div> <input id="email" type="email" placeholder="Email"> </div>
                     <div><textarea name="" id="messege" cols="30" rows="5" placeholder="Your message"></textarea></div>
-    
+
                     <input type="button" value="Send your message">
-            
-            
-                    </aside>
+
+
+                </aside>
             </form>
-        
-       </fieldset>
-       
+
+        </fieldset>
+
 
         <aside>
-       <h3>Follow Me</h3>
+            <h3>Follow Me</h3>
 
-       <section>
-        <img usemap="#facebook" width="20" src="images/facebook.png" alt="facebook icon">
-        <img  width="20" src="images/whatsapp.png" alt="">
-        <img usemap="#linkedIn" width="20" src="images/linkedIn.png" alt="">
-        <img  width="20" src="images/instergram.png" alt="">
-        <img usemap="#git hub" width="20" src="images/github.png" alt="">
-       </section>
-       
+            <section>
+                <img usemap="#facebook" width="20" src="images/facebook.png" alt="facebook icon">
+                <img width="20" src="images/whatsapp.png" alt="">
+                <img usemap="#linkedIn" width="20" src="images/linkedIn.png" alt="">
+                <img width="20" src="images/instergram.png" alt="">
+                <img usemap="#git hub" width="20" src="images/github.png" alt="">
+            </section>
 
-       <nav>Send message</nav>
+
+            <nav>Send message</nav>
         </aside>
     </footer>
 
