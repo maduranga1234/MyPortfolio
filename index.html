@@ -26,7 +26,8 @@
             top: 0;
             display: block;
             z-index: 10;
-            border: 1px solid rgb(18, 156, 211);
+            border-top: 1px solid rgb(18, 156, 211);
+            border-bottom: 1px solid rgb(18, 156, 211);
 
 
         }
@@ -41,45 +42,48 @@
 
         main>section>header {
 
-            background-color: #07bbf1;
+            background-color: #000000;
 
             width: 100%;
-            height: 5vh;
+            height: 7vh;
             text-align: center;
             top: 0;
             position: sticky;
             z-index: 2;
+            border-top: 1px solid rgb(18, 156, 211);
+            border-bottom: 1px solid rgb(18, 156, 211);
 
         }
 
         footer>header{
 
             
-            background-color: #07bbf1;
+            background-color: #000000;
 
-            width: 100%;
-            height: 5vh;
-            text-align: center;
-            top: 0;
-            position: sticky;
-            z-index: 2;
+width: 100%;
+height: 7vh;
+text-align: center;
+top: 0;
+position: sticky;
+z-index: 2;
+border-top: 1px solid rgb(18, 156, 211);
+border-bottom: 1px solid rgb(18, 156, 211);
         }
 
         footer>header>h1{
 
             
-             background-color: #07bbf1;
-
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
             justify-content: space-evenly;
-            font-size: 13px;
+            font-size: 19px;
             color: rgb(255, 255, 255);
             position: absolute;
             top: 0;
             left: 0;
+            right: 0;margin: auto;
 }
 
         main>section>header>h1 {
@@ -89,11 +93,12 @@
             margin: 0;
             display: flex;
             justify-content: space-evenly;
-            font-size: 13px;
+            font-size: 19px;
             color: rgb(255, 255, 255);
             position: absolute;
             top: 0;
             left: 0;
+            right: 0;margin: auto;
         }
 
         body>main>section {
@@ -206,8 +211,6 @@
             bottom: 0;
             left: 0%;
 
-
-
         }
 
         main>section:first-child>section>div:nth-child(2) {
@@ -252,31 +255,23 @@
 
         }
 
-        main>section:nth-child(2)>div:first-child {
-            width: 30%;
-            height: 15%;
-            position: absolute;
-            top: 0;
-            left: 40%;
-
-        }
-
-        main>section:nth-child(2)>div:nth-child(2) {
+        #firstDiv{
             width: 80%;
             height: 40%;
             position: absolute;
-            top: 20%;
-            left: 20%;
-            font-size: 10px;
-            color: white;
+            top: 5%;
+            left: 2%;
+       
         }
+
+
 
         main>section:nth-child(2)>section>div>article {
             width: 50%;
             height: 40%;
             position: absolute;
-            top: 40%;
-            left: 20%;
+            top:33%;
+            left:11%;
             font-size: 8px;
             color: white;
         }
@@ -285,8 +280,8 @@
             width: 50%;
             height: 40%;
             position: absolute;
-            bottom: 0;
-            left: 20%;
+            bottom: -5%;
+            left: 11%;
             font-size: 8px;
             color: white;
         }
@@ -308,7 +303,7 @@
 
         }
 
-        main>section:nth-child(2)>section>div:nth-child(3) {
+         main>section:nth-child(2)>section>div:nth-child(3) {
             width: max-content;
             height: 100%;
             position: absolute;
@@ -316,14 +311,13 @@
             right: 0%;
             z-index: 2;
             transform: rotate(9deg);
-          
             overflow: hidden;
 
-        }
+        } 
 
 
 
-        main>section:nth-child(2)>section>div:nth-child(4)>nav>p {
+         main>section:nth-child(2)>section>div:nth-child(4)>nav>p {
 
             width: max-content;
             height: max-content;
@@ -337,6 +331,28 @@
             color: bisque;
 
 
+        }   
+
+       #whoAmI {
+            width: 50%;
+            height: 10%;
+            position: absolute;
+            top: -5%;
+            left: 0%;
+            color: rgb(12, 159, 204);
+            font-size: 24px;
+            font-family: kumarOne;
+           
+        }
+
+        #h4{
+
+            width: 60%;
+            height: 15%;
+            position: absolute;
+            top: 22%;
+            left: 11%;
+            color: rgb(255, 250, 250);
         }
 
 
@@ -354,11 +370,14 @@
          font-size: 9px;
          color: bisque;
          box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
-         border: 2px solid rgb(14, 168, 196);
+         border: 2px solid rgb(0, 0, 0);
 
 
 
         }
+
+        
+   
 
         main>section:nth-child(3)>section>div:nth-child(2) {
 
@@ -374,7 +393,7 @@ right: 46%;
  font-size: 9px;
  color: bisque;
  box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
- border: 2px solid rgb(5, 168, 197);
+ border: 2px solid rgb(0, 0, 0);
 
 
 
@@ -394,7 +413,7 @@ right: 24%;
  font-size: 9px;
  color: bisque;
  box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
- border: 2px solid rgb(5, 168, 197);
+ border: 2px solid rgb(0, 0, 0);
 
 
 
@@ -414,7 +433,66 @@ right: 2%;
  font-size: 9px;
  color: bisque;
  box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
- border: 2px solid rgb(5, 168, 197);
+ border: 2px solid rgb(0, 0, 0);
+
+
+}
+
+main>section:nth-child(3)>section>div:nth-child(1)>div {
+
+width: 100%;
+height: 10%;
+position: absolute;
+bottom: 0;
+left: 0;
+background:url(images/star.png);
+background-size: cover;
+background-position: center;
+border-top: 1px solid rgb(255, 252, 252);
+
+
+}
+
+main>section:nth-child(3)>section>div:nth-child(2)>div {
+
+width: 100%;
+height: 10%;
+position: absolute;
+bottom: 0;
+left: 0;
+background:url(images/star.png);
+background-size: cover;
+background-position: center;
+border-top: 1px solid rgb(255, 252, 252);
+
+
+}
+
+main>section:nth-child(3)>section>div:nth-child(3)>div {
+
+width: 100%;
+height: 10%;
+position: absolute;
+bottom: 0;
+left: 0;
+background:url(images/star.png);
+background-size: cover;
+background-position: center;
+border-top: 1px solid rgb(255, 252, 252);
+
+
+}
+main>section:nth-child(3)>section>div:nth-child(4)>div {
+
+width: 100%;
+height: 10%;
+position: absolute;
+bottom: 0;
+left: 0;
+background:url(images/star.png);
+background-size: cover;
+background-position: center;
+border-top: 1px solid rgb(255, 252, 252);
 
 
 }
@@ -516,6 +594,7 @@ background:url(images/assigment1.jpg);
  background-position: center;
  border: 2px solid rgb(5, 168, 197);
  box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
+ border: 2px solid rgb(0, 0, 0);
 
 }
 
@@ -531,6 +610,7 @@ background:url(images/assigment1.jpg);
  background-position: center;
  border: 2px solid rgb(5, 168, 197);
  box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
+ border: 2px solid rgb(0, 0, 0);
 
 }
 
@@ -548,6 +628,7 @@ background:url(images/assigment1.jpg);
  background-position: center;
  border: 2px solid rgb(5, 168, 197);
  box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
+ border: 2px solid rgb(0, 0, 0);
 
 }
 
@@ -563,6 +644,7 @@ background:url(images/assigment1.jpg);
  background-position: center;
  border: 2px solid rgb(5, 168, 197);
  box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
+ border: 2px solid rgb(0, 0, 0);
 
 }
 
@@ -579,48 +661,49 @@ color: bisque;
 }
 
 main>section:nth-child(6)>section>div:nth-child(1){
-    width: 35%;
-    height: 40%;
+    width: 30%;
+    height:38%;
 position: absolute;
-top: 10%;
-left: 2%;
+top:17%;
+left: 15%;
 border-radius: 10px;
 background:url(images/ol.jpg);
  background-size: cover;
  background-position: center;
- font-size: 13px;
+ font-size: 10px;
  color: bisque;
  border: 2px solid rgb(5, 168, 197);
 
 }
 
 main>section:nth-child(6)>section>div:nth-child(2){
-    width: 35%;
-    height: 40%;
-position: absolute;
-top: 10%;
-right: 2%;
-border-radius: 10px;
-background:url(images/alevel.jpg);
+    width: 30%;
+    height:38%;
+
+ position: absolute;
+ top:17%;
+ right: 15%;
+ border-radius: 10px;
+ background:url(images/alevel.jpg);
  background-size: cover;
  background-position: center;
- font-size: 13px;
- color: bisque;
+ font-size: 10px;
+  color: bisque;
  border: 2px solid rgb(5, 168, 197);
 
 }
 
 main>section:nth-child(6)>section>div:nth-child(3){
-    width: 35%;
-    height: 40%;
+    width: 30%;
+    height:38%;
 position: absolute;
-top:55%;
-left: 2%;
+bottom: 2%;
+left: 15%;
 border-radius: 10px;
 background:url(images/deploma.jpg);
  background-size: cover;
  background-position: center;
- font-size: 13px;
+ font-size: 10px;
  color: bisque;
  border: 2px solid rgb(5, 168, 197);
 
@@ -628,20 +711,31 @@ background:url(images/deploma.jpg);
 
 
 main>section:nth-child(6)>section>div:nth-child(4){
-    width: 35%;
-    height: 40%;
+    width: 30%;
+    height: 38%;
 position: absolute;
-top:55%;
-right: 2%;
+bottom: 2%;
+right: 15%;
 border-radius: 10px;
 background:url(images/degree.jpg);
  background-size: cover;
  background-position: center;
- font-size: 13px;
+ font-size: 10px;
  color: bisque;
  border: 2px solid rgb(5, 168, 197);
 
 }
+
+main>section:nth-child(6)>div{
+    width: 30%;
+    height: 20%;
+position: absolute;
+top: 3%;
+left: 1%;
+color: rgb(5, 168, 197);
+
+}
+
 
 main>section:nth-child(7)>section>div:nth-child(1){
     width: 16%;
@@ -824,10 +918,11 @@ footer>aside>p:nth-child(2){
 footer>fieldset{
 
     width: 55%;
-    height: 60%;
+    height: 72%;
     position: absolute;
     left: 40%;
-    top:20%
+    top:20%;
+    border: 1px solid black;
 }
 
 
@@ -837,7 +932,7 @@ footer>address>img:nth-child(1){
     width: 5%;
     height: 10%;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 1%;
 }
 
@@ -846,7 +941,7 @@ footer>address>img:nth-child(2){
 width: 4%;
 height: 10%;
 position: absolute;
-top: 52%;
+top: 47%;
 left: 1%;
 }
 
@@ -855,7 +950,7 @@ footer>address>img:nth-child(3){
 width: 4%;
 height: 10%;
 position: absolute;
-top: 65%;
+top: 60%;
 left: 1%;
 }
 
@@ -864,7 +959,7 @@ left: 1%;
 width: 5%;
 height: 10%;
 position: absolute;
-top: 40%;
+top: 35%;
 left: 7%;
 font-size: 12px;
 color: aliceblue;
@@ -875,7 +970,7 @@ color: aliceblue;
     width: 20%;
 height: 10%;
 position: absolute;
-top: 53%;
+top: 48%;
 left: 7%;
 font-size: 12px;
 color: aliceblue;
@@ -887,7 +982,7 @@ color: aliceblue;
     width: 20%;
 height: 10%;
 position: absolute;
-top: 65%;
+top: 60%;
 left: 7%;
 font-size: 12px;
 color: aliceblue;
@@ -899,24 +994,69 @@ color: aliceblue;
     height: 20%;
     position: absolute;
     left: 1%;
-    bottom: 7%;
+    bottom: 9%;
     color: aliceblue;
     
 
 }
 
-#sentMassege{
-    height:40%;
-    width: 20%;
+#sentName{
+    width: 5%;
+    height: 15%;
     position: absolute;
-    bottom: -22%;
-    right: 2%;
-    background-color:rgb(19, 227, 235);
-    text-align: center;
-    border-radius: 10px;
+    top: 17%;
+    left: 14%;
+    font-size: 13px;
+    background-color: #000000;
+
+    color: white;
 
 
 }
+
+#sentEmail{
+    width: 5%;
+    height: 9%;
+    position: absolute;
+    top: 17%;
+    right: 38%;
+    font-size: 13px;
+    background-color: #007777;
+
+    color: white;
+
+
+}
+
+#sentMsg{
+
+    
+    position: absolute;
+    top: 30%;
+    left: 14%;
+    font-size: 21.4px;
+    background-color: #000000;
+
+    color: white;
+}
+
+footer>fieldset>form>aside>input{
+
+width: 30%;
+height: 10%;
+position: absolute;
+right: 1%;
+bottom: 1%;
+font-size: 10px;
+background-color: #0d8ab1;
+color: white;
+border: 1px solid  rgb(0, 0, 0) ;
+border-radius: 10px;
+
+
+}
+
+
 
 
 
@@ -964,7 +1104,7 @@ color: aliceblue;
 
             </div>
 
-            <dev id="homeImage"><img width="230" src="images/maduranga1.png" alt="This is home image">
+            <dev id="homeImage"><img width="250" height="310" src="images/maduranga1.png" alt="This is home image">
             </dev>
 
 
@@ -1020,14 +1160,10 @@ color: aliceblue;
             <header>
                 <h1>About Me</h1>
             </header>
-
-
-
-
-            <div>
+            <div id="firstDiv">
                 <hgroup>
-                    <h3>Who am I ?</h3>
-                    <h4>I’am Maduranga Sadaruwan , a Full stack developer <br>
+                    <h3 id="whoAmI">Who am I ?</h3>
+                    <h4 id="h4">I’am Maduranga Sadaruwan , a Full stack <br>developer
                         from Sri Lanka.</h4>
                 </hgroup>
             </div>
@@ -1036,13 +1172,18 @@ color: aliceblue;
                 <div>
 
                     <article>
-                        <p>Hello there! I'm an accomplished and passionate full stack developer from Sri Lanka. With an
-                            insatiable curiosity and drive for innovation, I merge code and creativity. Since entering
-                            the world of software engineering in 2022, I've been captivated by the evolving technology
-                            landscape. Equipped with a wide range of technical skills and expertise in both front-end
-                            and back-end development, I craft seamless experiences with pixels and data. From
-                            captivating user interfaces to robust server-side solutions, I strive to surpass
-                            expectations with every line of code.</p>
+
+
+
+                        <p>Hello there! I'm an accomplished and passionate full stack developer from Sri Lanka. <br>
+                            With an insatiable curiosity and drive for innovation, I merge code and creativity. <br>
+                            Since entering the world of software engineering in 2022, I've been captivated <br>
+                            by the evolving technology landscape.</p>
+
+                        <p>Equipped with a wide range of technical skills and expertise in both front-end and <br>
+                           back-end development, I craft seamless experiences with pixels and data. From <br>
+                           captivating user interfaces to robust server-side solutions, I strive to surpass <br>
+                           expectations with every line of code.</p>
                     </article>
                 </div>
 
@@ -1091,6 +1232,8 @@ color: aliceblue;
                     <p>I specialize in web development, creating visually stunning and user-friendly websites. With
                         expertise in responsive design and seamless functionality, I bring digital experiences to life
                         that captivate and engage users, leaving a lasting impact.</p>
+
+                        <div></div>
                 </div>
 
                 <div>
@@ -1102,6 +1245,8 @@ color: aliceblue;
                         send
                         Send message
                         Checking who can access file</p>
+
+                        <div></div>
                 </div>
 
                 <div>
@@ -1111,6 +1256,7 @@ color: aliceblue;
                         crafting exceptional user experiences, I strive to create desktop applications that go beyond
                         expectations and leave a lasting impression.
                     </p>
+                    <div></div>
                 </div>
 
                 <div>
@@ -1120,6 +1266,7 @@ color: aliceblue;
                         interfaces that empower seamless user engagement. Get ready to explore a world of transformative
                         mobile experiences crafted with cutting-edge technology and exceptional design.</p>
 
+                        <div></div>
                 </div>
             </section>
 
@@ -1316,17 +1463,17 @@ color: aliceblue;
             <img width="20" src="images/pin.png" alt="">
             <p id="email1">madurangasadaruwan393@gmail.com</p>
             <p id="contact">+94 765591043</p>
-            <p id="address">Galle Road Ambalangoda</p>
+            <p id="address">Galle Road Balapitiya</p>
         </address>
 
         <fieldset>
 
-            <legend> </legend>
+           
             <form action="">
                 <aside>
-                    <div> <input id="name" type="text" placeholder="Name"> </div>
-                    <div> <input id="email" type="email" placeholder="Email"> </div>
-                    <div><textarea name="" id="messege" cols="30" rows="5" placeholder="Your message"></textarea></div>
+                    <div id="sentName"> <input id="name" type="text" placeholder="Name"> </div>
+                    <div id="sentEmail"> <input id="email" type="email" placeholder="Email"> </div>
+                    <div id="sentMsg"><textarea name="" id="messege" cols="30" rows="5" placeholder="Your message"></textarea></div>
 
                     <input type="button" value="Send your message">
 
@@ -1349,7 +1496,6 @@ color: aliceblue;
             </section>
 
 
-            <nav id="sentMassege">Send message</nav>
         </aside>
     </footer>
 
