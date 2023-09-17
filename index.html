@@ -15,8 +15,9 @@
     <meta name="theme-color" content="red">
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="normalize.css">
-
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Libre+Baskerville:wght@700&family=Linden+Hill&display=swap" rel="stylesheet">  <style>
         header {
             background-color: #000000;
             position: fixed;
@@ -37,7 +38,7 @@
            
             padding: 10px;
             color: white;
-             font-size: 10px;
+             font-size: 9px;
            
         }
  
@@ -139,27 +140,30 @@ border-bottom: 1px solid rgb(18, 156, 211);
         }
 
         body>main>section:first-child>div:first-child>hgroup>h1 {
-
+            font-family: 'Kumar One', cursive;
             color: rgb(13, 204, 252);
             position: absolute;
-            top: 15%;
-            left: 6%;
+            top: 12%;
+            left: 3%;
+           
+
         }
 
         body>main>section:first-child>div:first-child>hgroup>h3 {
-
+            font-family: 'Kumar One', cursive;
             color: rgb(255, 255, 255);
             position: absolute;
-            top: 30%;
+            top: 27%;
             left: 10%;
         }
 
         body>main>section:first-child>div>article {
-
+            font-family: 'Linden Hill', serif;
             color: rgb(255, 255, 255);
             position: absolute;
             top: 45%;
             left: 10%;
+            font-size: 15px;
         }
 
         body>main {
@@ -194,29 +198,21 @@ border-bottom: 1px solid rgb(18, 156, 211);
 
         main>section:first-child>section {
 
-
-            width: 100%;
+         margin-left: 5%;
+            width: 40%;
             height: 100vh;
-            display: grid;
-            justify-content: space-between;
-            position: relative;
-            align-items: center;
-
-
+            display: flex;
+            justify-content:space-around;
+           
 
         }
 
-        main>section:first-child>section>div:first-child {
-
-            width: 20%;
-            height: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 0%;
+        main>section:first-child>section>div>img{
+           border-radius: 5px;
 
         }
 
-        main>section:first-child>section>div:nth-child(2) {
+       /* main>section:first-child>section>div:nth-child(2) {
 
             width: 20%;
             height: 100%;
@@ -256,7 +252,7 @@ border-bottom: 1px solid rgb(18, 156, 211);
             left: 40%;
             background-color: white;
 
-        }
+        } */
 
         #firstDiv{
             width: 80%;
@@ -279,14 +275,24 @@ border-bottom: 1px solid rgb(18, 156, 211);
             color: white;
         }
 
+        .blueText{
+            color: rgb(7, 130, 187);
+            font-size: 9px;
+            font-family: 'Kumar One', cursive;
+            
+        }
+
         main>section:nth-child(2)>section>div:nth-child(2) {
             width: 50%;
             height: 40%;
             position: absolute;
             bottom: -5%;
             left: 11%;
-            font-size: 8px;
-            color: white;
+            font-size: 7px;
+            color: rgb(255, 255, 255);
+            font-family: 'Libre Baskerville', serif;
+          
+
         }
 
         #CV {
@@ -374,6 +380,7 @@ border-bottom: 1px solid rgb(18, 156, 211);
          color: bisque;
          box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
          border: 2px solid rgb(0, 0, 0);
+         
 
 
 
@@ -429,7 +436,7 @@ main>section:nth-child(3)>section>div:nth-child(4) {
 position: absolute;
 top: 16%;
 right: 2%;
- background:url(images/mobile.jpg);
+ background-image:url(images/mobile.jpg);
  background-size: cover;
  background-position: center;
  border-radius: 10px;
@@ -437,6 +444,8 @@ right: 2%;
  color: bisque;
  box-shadow: 1px 2px 1px 1px rgb(14, 168, 196);
  border: 2px solid rgb(0, 0, 0);
+ /* background-color: #000000f1; */
+ background-blend-mode:color;
 
 
 }
@@ -452,6 +461,8 @@ background:url(images/star.png);
 background-size: cover;
 background-position: center;
 border-top: 1px solid rgb(255, 252, 252);
+background-color: #000000f1;
+
 
 
 }
@@ -1003,15 +1014,13 @@ color: aliceblue;
 
 }
 
-#sentName{
-    width: 5%;
-    height: 15%;
+#name{
+    
     position: absolute;
     top: 17%;
     left: 14%;
     font-size: 13px;
     background-color: #000000;
-
     color: white;
 
 
@@ -1065,9 +1074,6 @@ border-radius: 10px;
 
 
 
-
-
-
     </style>
 
 </head>
@@ -1076,12 +1082,12 @@ border-radius: 10px;
     <header>
         <nav>
             
-                <a href="#ABOUTH">About</a><a>Education</a><a>Skills</a><a>My Work</a><a>Gallery</a><a>Contact</a>
+              <a href="#main">Home</a><a href="#ABOUTH">About</a><a href="#SKILLS">Skills</a><a href="#WORK">My Work</a><a href="#ASSIGMENT">Assigment</a><a href="#EDUCATION">Education</a><a href="#GALLERY">Gallery</a><a href="#CONTACT">Contact</a>
             
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <section>
 
 
@@ -1125,7 +1131,7 @@ border-radius: 10px;
                 </div>
 
                 <div>
-                    <img width="20" src="images/instergram.png" alt="">
+                    <img width="20" src="images/instregram.png" alt="">
 
                 </div>
 
@@ -1186,12 +1192,12 @@ border-radius: 10px;
                 </div>
 
                 <div>
-                    <p>Name :Maduranga Sadaruwan</p>
-                    <p>Email :madurangasadaruwan393</p>
-                    <p>Age :21</p>
-                    <p>Address :Ambalangoda,Sri Lanka</p>
-                    <p>Contact : +94 765591043</p>
-                    <p>Linked In :Maduranga sadaruwan</p>
+                    <p><span class="blueText"> Name      :</span>Maduranga Sadaruwan</p>
+                    <p><span class="blueText"> Email     :</span> madurangasadaruwan393@gmail.com</p>
+                    <p><span class="blueText"> Age       :</span> 21</p>
+                    <p><span class="blueText"> Address   :</span>Balapitiya,Sri Lanka</p>
+                    <p><span class="blueText"> Contact   :</span>+94 765591043</p>
+                    <p><span class="blueText"> Linked In :</span>Maduranga sadaruwan</p>
                 </div>
 
 
@@ -1219,7 +1225,7 @@ border-radius: 10px;
         <section>
 
             <header>
-                <h1>Skills</h1>
+                <h1><dfn id="SKILLS"><strong>Skills</strong></dfn></h1>
             </header>
 
             <h1>What I Do ?</h1>
@@ -1288,7 +1294,8 @@ border-radius: 10px;
         <section>
 
             <header>
-                <h1>My recent Work</h1>
+                <h1><dfn id="WORK"><strong>My Resent Work</strong></dfn></h1>
+
             </header>
 
             <section>
@@ -1305,7 +1312,7 @@ border-radius: 10px;
         <section>
 
             <header>
-                <h1>Assignment</h1>
+                <h1><dfn id="ASSIGMENT"><strong>Assigment</strong></dfn></h1>
             </header>
 
             <section>
@@ -1338,7 +1345,7 @@ border-radius: 10px;
         <section>
 
             <header>
-                <h1> Education </h1>
+                <h1><dfn id="EDUCATION"><strong>Education</strong></dfn></h1>
             </header>
                 
             <div>
@@ -1415,7 +1422,7 @@ border-radius: 10px;
         <section>
 
             <header>
-                <h1>Gallery</h1>
+                <h1><dfn id="GALLERY"><strong>Gallery</strong></dfn></h1>
             </header>
 
             <section>
@@ -1446,7 +1453,7 @@ border-radius: 10px;
 
     <footer>
         <header>
-            <h1>Contact</h1>
+            <h1><dfn id="CONTACT"><strong>Contact</strong></dfn></h1>
         </header>
       
         <aside>
