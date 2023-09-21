@@ -37,6 +37,7 @@
             z-index: 10;
             border-top: 1px solid rgb(18, 156, 211);
             border-bottom: 1px solid rgb(18, 156, 211);
+            text-align: right;
 
 
 
@@ -46,11 +47,20 @@
         body>header>nav>a {
 
 
-            padding: 10px;
+            padding: 15px;
             color: white;
-            font-size: 9px;
-
+            font-size: 18px;
+            text-decoration: none;
         }
+
+        body>header>nav{
+
+         width: 100%;
+         height: 100%;
+        position: absolute;
+        top: 30%;
+
+         }
 
 
 
@@ -147,16 +157,19 @@
         body>header>nav>ul>li {
             margin: 0;
             padding: 0;
-            font-size: 10px;
+            font-size: 15px;
             margin-top: 6px;
         }
 
         body>main>section:first-child>div:first-child>hgroup>h1 {
-            font-family: 'Kumar One', cursive;
-            color: rgb(13, 204, 252);
-            position: absolute;
-            top: 12%;
-            left: 3%;
+        
+    font-family: 'Kumar One', cursive;
+    color: rgb(13, 204, 252);
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    font-size: 4em;
+
 
 
         }
@@ -165,17 +178,21 @@
             font-family: 'Kumar One', cursive;
             color: rgb(255, 255, 255);
             position: absolute;
-            top: 27%;
+            top: 25%;
             left: 10%;
+            font-size: 3em;
+            line-height: 60px;
         }
 
         body>main>section:first-child>div>article {
+            width: 70%;
+            height: 60%;
             font-family: 'Linden Hill', serif;
             color: rgb(255, 255, 255);
             position: absolute;
-            top: 45%;
+            top: 47%;
             left: 10%;
-            font-size: 15px;
+            font-size: 2em;
         }
 
         body>main {
@@ -192,10 +209,13 @@
         #homeImage {
 
             width: 40%;
-            height: 50%;
+            height: 100%;
             position: absolute;
             top: 0;
             right: 0;
+            background: url(images/maduranga1.png);
+            background-size: cover;
+            background-position: center;
 
         }
 
@@ -205,14 +225,15 @@
             position: absolute;
             bottom: 0;
             left: 3%;
+            
         }
 
 
         main>section:first-child>section {
 
-            margin-left: 5%;
+            margin-left: 6%;
             width: 40%;
-            height: 100vh;
+        
             display: flex;
             justify-content: space-around;
 
@@ -221,6 +242,7 @@
 
         main>section:first-child>section>div>img {
             border-radius: 5px;
+            
 
         }
 
@@ -239,16 +261,16 @@
             width: 50%;
             height: 40%;
             position: absolute;
-            top: 32%;
+            top: 27%;
             left: 11.5%;
-            font-size: 8px;
+            font-size: 17px;
             color: white;
             font-family: 'Alike Angular', serif;
         }
 
         .blueText {
             color: rgb(7, 130, 187);
-            font-size: 9px;
+            font-size: 18px;
             font-family: 'Kumar One', cursive;
 
         }
@@ -259,7 +281,7 @@
             position: absolute;
             bottom: -4%;
             left: 11.5%;
-            font-size: 7px;
+            font-size: 15px;
             color: rgb(255, 255, 255);
             font-family: 'Libre Baskerville', serif;
         }
@@ -267,19 +289,18 @@
 
         #CV {
             width: 25%;
-            height: 10%;
-            position: absolute;
-            bottom: 26%;
-            right: 18%;
-            background-color: rgb(11, 197, 243);
-            text-align: center;
-            font-size: 16px;
-            z-index: 1;
-            border-radius: 10px;
-            box-shadow: 1px 2px 1px 2px rgb(4, 121, 150);
-
-            border: 2px solid black;
-            color: black;
+    height: 10%;
+    position: absolute;
+    bottom: 22%;
+    right: 17%;
+    background-color: rgb(11, 197, 243);
+    text-align: center;
+    font-size: 27px;
+    z-index: 1;
+    border-radius: 25px;
+    box-shadow: 1px 2px 1px 2px rgb(4, 121, 150);
+    border: 2px solid black;
+    color: black;
 
 
 
@@ -287,13 +308,13 @@
 
         main>section:nth-child(2)>section>div:nth-child(3) {
             width: max-content;
-            height: 95%;
-            position: absolute;
-            top: 5%;
-            right: 0.7%;
-            z-index: 2;
-            transform: rotate(8deg);
-            overflow: hidden;
+    height: 91%;
+    position: absolute;
+    top: 12%;
+    right: 0.7%;
+    z-index: 2;
+    transform: rotate(8deg);
+    overflow: hidden;
 
         }
 
@@ -323,7 +344,7 @@
             top: 1%;
             left: 0%;
             color: rgb(12, 159, 204);
-            font-size: 18px;
+            font-size: 30px;
             font-family: 'Kumar One', cursive;
 
 
@@ -331,14 +352,14 @@
 
         #h4 {
 
-            width: 60%;
+            width: 70%;
             height: 15%;
             position: absolute;
-            top: 32%;
+            top: 15%;
             left: 12%;
             color: rgb(255, 250, 250);
             font-family: 'Corben', cursive;
-            font-size: 12px;
+            font-size: 26px;
         }
 
 
@@ -1694,35 +1715,35 @@
 
             </div>
 
-            <dev id="homeImage"><img width="250" height="310" src="images/maduranga1.png" alt="This is home image">
-            </dev>
+            <div id="homeImage"></div>
+            
 
 
             <section>
 
 
                 <div>
-                    <img usemap="#facebook" width="20" src="images/facebook.png" alt="facebook icon">
+                    <img usemap="#facebook" width="40" src="images/facebook.png" alt="facebook icon">
 
                 </div>
 
                 <div>
-                    <img width="20" src="images/whatsapp.png" alt="">
+                    <img width="40" src="images/whatsapp.png" alt="">
 
                 </div>
 
                 <div>
-                    <img usemap="#linkedIn" width="20" src="images/linkedIn.png" alt="">
+                    <img usemap="#linkedIn" width="40" src="images/linkedIn.png" alt="">
 
                 </div>
 
                 <div>
-                    <img width="20" src="images/instergarm2.jpeg" alt="">
+                    <img width="40" src="images/instergarm2.jpeg" alt="">
 
                 </div>
 
                 <div>
-                    <img usemap="#git hub" width="20" src="images/github.png" alt="">
+                    <img usemap="#git hub" width="40" src="images/github.png" alt="">
 
                 </div>
 
@@ -1788,7 +1809,7 @@
 
 
                 <div>
-                    <img width="230" src="images/abouth me.png" alt="About me">
+                    <img  src="images/abouth me.png" alt="About me">
 
                 </div>
 
