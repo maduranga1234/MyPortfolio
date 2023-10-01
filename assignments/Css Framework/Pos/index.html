@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Customer Manager Form</title>
+    <link rel="stylesheet" href="Pages/assets/css/bootstrap.css">
+
+</head>
+
+<body>
+
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Place Order Form</a>
+
+    </div>
+
+    <div>
+        <a class="navbar-brand" href="Customer.html">Customer</a>
+
+    </div>
+
+    <div>
+        <a class="navbar-brand" href="#">Item</a>
+
+    </div>
+
+    <div>
+        <a class="navbar-brand" href="#">Orders</a>
+
+    </div>
+</nav>
+<div class="container-fluid mt-2">
+    <div class="row border">
+        <div class="col-12 col-md-4  mt-3 p-3 "
+             style="border-radius: 10px; border: 2px solid #0bb256">
+            <h4 style="text-align: center;color: #0bb256 ">Invoice Details</h4>
+            <div class="row g-2">
+                <div class="col-6">
+
+                    <label for="oId" class="form-label">Order Id :</label>
+                    <input type="text" id="oId" class="form-control" placeholder="Order Id" aria-label="Last name">
+
+                </div>
+                <div class="col-6">
+                    <label for="date" class="form-label">Order Date :</label>
+                    <input type="date" id="date" class="form-control" placeholder="Order Date"
+                           aria-label="Order Date">
+                </div>
+                <div class="col-6">
+                    <label for="inputState" class="form-label">Customer :</label>
+                    <select id="inputState" class="form-select">
+                        <option>C001</option>
+                        <option>C002</option>
+                        <option>C003</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label for="id" class="form-label">Customer Id :</label>
+                    <input type="text" id="id" class="form-control" placeholder="Customer Id"
+                           aria-label="Last name">
+                </div>
+                <div class="col-12">
+                    <label for="name" class="form-label">Customer Name :</label>
+                    <input type="text" id="name" class="form-control" placeholder="Customer Name"
+                           aria-label="Last name">
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-12 col-md-4  mt-3 p-3 "
+             style="border-radius: 10px; border: 2px solid #0BB256">
+            <!--Form--> <!--Slider-->
+            <h4 style="text-align: center; color: green">Item Select</h4>
+            <div class="row g-2">
+                <div class="col-6">
+                    <label for="inputState1" class="form-label">Order Id :</label>
+                    <select id="inputState1" class="form-select">
+                        <option>P001</option>
+                        <option>P002</option>
+                        <option>P003</option>
+                    </select>
+                </div>
+
+                <div class="col-6">
+                    <label for="itemCode" class="form-label">Item Code :</label>
+                    <input type="text" id="itemCode" class="form-control" placeholder="Item Code"
+                           aria-label="Last name">
+                </div>
+
+                <div class="col-4">
+                    <label for="itemName" class="form-label">Item Name :</label>
+                    <input type="text" id="itemName" class="form-control" placeholder="Item Name"
+                           aria-label="Last name">
+                </div>
+
+                <div class="col-4">
+                    <label for="price" class="form-label">Price :</label>
+                    <input type="text" id="price" class="form-control" placeholder="Price" aria-label="Last name">
+                </div>
+                <div class="col-4">
+                    <label for="qtyH" class="form-label">QtyOnHand :</label>
+                    <input type="text" id="qtyH" class="form-control" placeholder="QtyOnHand"
+                           aria-label="Last name">
+                </div>
+                <div class="col-12">
+                    <label for="qty" class="form-label">OrderQty :</label>
+                    <input type="text" id="qty" class="form-control" placeholder="OrderQty" aria-label="Last name">
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-warning mt-3  ">AddToCart</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-4  mt-3 p-3 "
+             style="border-radius: 10px; border: 2px solid #00a749">
+            <h2 style="color: #02a759">Total : RS <span>4000</span>/=</h2>
+            <h2 style=" color: #c7bf00">SubTotal : <span>1000 RS</span>/=</h2>
+            <div class="row g-2">
+                <div class="col-6">
+                    <label for="cash" class="form-label">Cash :</label>
+                    <input type="text" id="cash" class="form-control" placeholder="Cash" aria-label="First name">
+                </div>
+                <div class="col-6">
+                    <label for="discount" class="form-label">Discount :</label>
+                    <input type="number" id="discount" class="form-control" placeholder="Discount"
+                           aria-label="Last name">
+                </div>
+                <div class="col-12">
+                    <label for="Balance" class="form-label">Balance :</label>
+                    <input type="text" id="Balance" class="form-control" placeholder="Balance"
+                           aria-label="Last name">
+                </div>
+                <div  class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-success" style="width: 30%;">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Table-->
+<div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
+    <table class="table table-bordered table-hover table-striped-columns ">
+        <thead>
+        <tr class="table mt-5 p-3 ">
+
+            <th class="bg-success">Item Id</th>
+            <th class="bg-success">Item Name</th>
+            <th class="bg-success">Unit Price</th>
+            <th class="bg-success">Quantity</th>
+            <th class="bg-success">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>O001</th>
+            <td>Tomato</td>
+            <td>250</td>
+            <td>3</td>
+            <td>900</td>
+        </tr>
+
+        <tr>
+            <th>O002</th>
+            <td>Papaya</td>
+            <td>120</td>
+            <td>2</td>
+            <td>240</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<script src="../assets/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

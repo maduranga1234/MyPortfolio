@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>-->
+    <style>
+        #btnDiv{
+            position: absolute;
+            right:2%;
+            top:45%;
+
+        }
+
+        #table{
+            position: absolute;
+            top: 50%;
+        }
+
+
+        #idDiv{
+            position: absolute;
+            top:20%;
+            left: 2%;
+        }
+
+        #nameDiv{
+            position: absolute;
+            top:20%;
+            left: 33%;
+
+        }
+        #addressDiv{
+
+            position: absolute;
+            top:20%;
+            left: 66%;
+
+        }
+
+        #contactDiv{
+            position: absolute;
+            top:35%;
+            left: 33%;
+
+        }
+
+        #emailDiv{
+            position: absolute;
+            top:35%;
+            left: 66%;
+        }
+
+        #search{
+            position: absolute;
+            top:12%;
+            left: 74%;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ITEM FORM</a>
+
+    </div>
+
+    <div>
+        <a class="navbar-brand" href="#">Customer</a>
+
+    </div>
+
+    <div>
+        <a class="navbar-brand" href="#">Item</a>
+
+    </div>
+
+    <div>
+        <a class="navbar-brand" href="#">Orders</a>
+
+    </div>
+</nav>
+
+<div class="container text-center">
+    <div class="row">
+
+        <form id="search" class="d-flex col-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger " fdprocessedid="prr3r4" type="submit">Search</button>
+        </form>
+
+
+        <div id="idDiv" class="col-3">
+            <label for="id" class="form-label"></label>
+            <input type="email" class="form-control" id="id" placeholder="Id">
+        </div>
+
+        <div id="nameDiv" class="col-4">
+            <label for="Item name" class="form-label"></label>
+            <input type="email" class="form-control" id="Item name" placeholder="Item name">
+        </div>
+
+        <div id="addressDiv" class="col-4">
+            <label for="Unit price" class="form-label"></label>
+            <input type="email" class="form-control" id="Unit price" placeholder="Unit price">
+        </div>
+
+        <div id="contactDiv" class="col-4">
+            <label for="Qty" class="form-label"></label>
+            <input type="email" class="form-control" id="Qty" placeholder="Qty">
+        </div>
+
+        <div id="emailDiv" class="col-4">
+            <label for="Quality" class="form-label"></label>
+            <input type="email" class="form-control" id="Quality" placeholder="Quality">
+        </div>
+
+    </div>
+</div>
+
+<div id="btnDiv">
+    <button type="button" class="btn btn-success">Save   </button>
+
+    <button type="button" class="btn btn-primary m-lg-4">Update</button>
+
+    <button type="button" class="btn btn-danger">Delete </button>
+
+</div>
+
+
+
+
+
+
+<table id="table" class="table mt-5 border">
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">C001</th>
+        <td>Maduranga</td>
+        <td>Galle</td>
+        <td>0765591043</td>
+        <td>madurangasadaruwan393@gmail.com</td>
+    </tr>
+    <tr>
+        <th scope="row">C002</th>
+        <td>Maduranga</td>
+        <td>Galle</td>
+        <td>0765591043</td>
+        <td>madurangasadaruwan393@gmail.com</td>
+    </tr>
+
+    <tr>
+        <th scope="row">C003</th>
+        <td>Maduranga</td>
+        <td>Galle</td>
+        <td>0765591043</td>
+        <td>madurangasadaruwan393@gmail.com</td>
+    </tr>
+
+    <tr>
+        <th scope="row">C004</th>
+        <td>Maduranga</td>
+        <td>Galle</td>
+        <td>0765591043</td>
+        <td>madurangasadaruwan393@gmail.com</td>
+    </tr>
+
+    <tr>
+        <th scope="row">C005</th>
+        <td>Maduranga</td>
+        <td>Galle</td>
+        <td>0765591043</td>
+        <td>madurangasadaruwan393@gmail.com</td>
+    </tr>
+
+    <tr>
+        <th scope="row">C003</th>
+        <td>Maduranga</td>
+        <td>Galle</td>
+        <td>0765591043</td>
+        <td>madurangasadaruwan393@gmail.com</td>
+    </tr>
+
+    <tr>
+        <th scope="row">C003</th>
+        <td>Maduranga</td>
+        <td>Galle</td>
+        <td>0765591043</td>
+        <td>madurangasadaruwan393@gmail.com</td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
