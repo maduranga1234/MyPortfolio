@@ -5,57 +5,9 @@
     <title>Bootstrap</title>
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>-->
     <style>
-        #btnDiv{
-            position: absolute;
-            right:2%;
-            top:45%;
-
-        }
-
-        #table{
-            position: absolute;
-            top: 50%;
-        }
 
 
-        #idDiv{
-            position: absolute;
-            top:20%;
-            left: 2%;
-        }
 
-        #nameDiv{
-            position: absolute;
-            top:20%;
-            left: 33%;
-
-        }
-        #addressDiv{
-
-            position: absolute;
-            top:20%;
-            left: 66%;
-
-        }
-
-        #contactDiv{
-            position: absolute;
-            top:35%;
-            left: 33%;
-
-        }
-
-        #emailDiv{
-            position: absolute;
-            top:35%;
-            left: 66%;
-        }
-
-        #search{
-            position: absolute;
-            top:12%;
-            left: 74%;
-        }
 
     </style>
 
@@ -89,33 +41,33 @@
 <div class="container text-center">
     <div class="row">
 
-        <form id="search" class="d-flex col-3" role="search">
+        <form id="search" class="d-flex col-3" role="search" style=" position: absolute;top:12%;left: 74%;">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-danger " fdprocessedid="prr3r4" type="submit">Search</button>
         </form>
 
 
-        <div id="idDiv" class="col-3">
+        <div id="idDiv" class="col-3" style="   position: absolute;top:20%; left: 2%;">
             <label for="id" class="form-label"></label>
             <input type="email" class="form-control" id="id" placeholder="Id">
         </div>
 
-        <div id="nameDiv" class="col-4">
+        <div id="nameDiv" class="col-4" style=" position: absolute;top:20%;left: 33%;">
             <label for="Item name" class="form-label"></label>
             <input type="email" class="form-control" id="Item name" placeholder="Item name">
         </div>
 
-        <div id="addressDiv" class="col-4">
+        <div id="addressDiv" class="col-4" style=" position: absolute;top:20%; left: 66%;">
             <label for="Unit price" class="form-label"></label>
             <input type="email" class="form-control" id="Unit price" placeholder="Unit price">
         </div>
 
-        <div id="contactDiv" class="col-4">
+        <div id="contactDiv" class="col-4" style="position: absolute; top:35%; left: 33%;">
             <label for="Qty" class="form-label"></label>
             <input type="email" class="form-control" id="Qty" placeholder="Qty">
         </div>
 
-        <div id="emailDiv" class="col-4">
+        <div id="emailDiv" class="col-4" style=" position: absolute;top:35%; left: 66%;">
             <label for="Quality" class="form-label"></label>
             <input type="email" class="form-control" id="Quality" placeholder="Quality">
         </div>
@@ -123,7 +75,7 @@
     </div>
 </div>
 
-<div id="btnDiv">
+<div id="btnDiv" style=" position: absolute;right:2%;top:45%;">
     <button type="button" class="btn btn-success">Save   </button>
 
     <button type="button" class="btn btn-primary m-lg-4">Update</button>
@@ -137,7 +89,7 @@
 
 
 
-<table id="table" class="table mt-5 border">
+<table id="table" class="table mt-5 border" style=" position: absolute;top: 50%;">
     <thead>
     <tr>
         <th scope="col">Id</th>
