@@ -75,7 +75,7 @@
     </div>
 
     <div id="btnDiv" style="position: absolute;right:2%;top:45%;">
-        <button type="button" class="btn btn-success">Save   </button>
+        <button id="CustSaveBTN" type="button" class="btn btn-success">Save   </button>
 
         <button type="button" class="btn btn-primary m-lg-4">Update</button>
 
@@ -83,7 +83,7 @@
 
     </div>
 
-    <table id="table" class="table mt-5 border" style=" position: absolute; top: 50%;">
+    <table id="Custtable" class="table mt-5 border" style=" position: absolute; top: 50%;">
         <thead>
         <tr>
             <th scope="col">Id</th>
@@ -93,7 +93,7 @@
             <th scope="col">Email</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="tBdy">
         <tr>
             <th scope="row">C001</th>
             <td>Maduranga</td>
@@ -544,6 +544,60 @@
     );
 
 
+
+
+    document.getElementById("CustSaveBTN").addEventListener("click",function () {
+
+        var customers = [];
+
+        var customer = {
+
+            custId1:  document.querySelector("#id").value,
+            custName1:  document.querySelector("#name").value,
+            custAddress1:  document.querySelector("#address").value,
+            custContact1:  document.querySelector("#tp").value,
+            custEmail: document.querySelector("#email").value
+
+        }
+
+        customers.push[customer];
+
+
+        let table=document.getElementById("Custtable");
+        let tBody=table.getElementsByTagName("tbody")[0];
+
+
+          let tRow=document.createElement("tr");
+
+        let tcall1=document.createElement("td");
+        tcall1.textContent=customer.custId1;
+        tRow.appendChild(tcall1);
+
+        let tcall2=document.createElement("td");
+        tcall2.textContent=customer.custName1;
+        tRow.appendChild(tcall2);
+
+        let tcall3=document.createElement("td");
+        tcall3.textContent=customer.custAddress1;
+        tRow.appendChild(tcall3);
+
+        let tcall4=document.createElement("td");
+        tcall4.textContent=customer.custContact1;
+        tRow.appendChild(tcall4);
+
+        let tcall5=document.createElement("td");
+        tcall5.textContent=customer.custEmail;
+        tRow.appendChild(tcall5);
+
+
+
+        tBody.appendChild(tRow);
+
+
+
+
+
+    });
 
 
 

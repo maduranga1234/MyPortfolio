@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+    body{
+      position: relative;
+    background-color: rgb(235, 235, 235);
+      height: 100vh;
+    }
+
+
+    body>div:first-child{
+      position: absolute;
+      width: 12%;
+      height: 9%;
+      top: 40%;
+      left: 3%;
+        border: 1px solid black ;
+    }
+    body>div:nth-child(2){
+      position: absolute;
+      width: 12%;
+      height: 9%;
+      top: 40%;
+       border: 1px solid black ;
+      left: 15%;
+    }
+    body>div:nth-child(3){
+      position: absolute;
+      width: 12%;
+      height: 9%;
+      top: 40%;
+        border: 1px solid black ;
+      
+      left: 27%;
+    }
+    body>div:nth-child(4){
+      position: absolute;
+      width: 12%;
+      height: 9%;
+      top: 40%;
+        border: 1px solid black ;
+      left: 39%;
+    }
+
+
+    body>div:nth-child(5){
+      position: absolute;
+      width: 12%;
+      height: 9%;
+      top: 40%;
+        border: 1px solid black;
+      left: 51%;
+    }
+
+    body>div:nth-child(6){
+      position: absolute;
+      width: 12%;
+      height: 9%;
+      top: 40%;
+        border: 1px solid black;
+      left: 63%;
+    }
+
+    body>div:nth-child(7){
+      position: absolute;
+      width: 12%;
+      height: 9%;
+      top: 40%;
+        border: 1px solid black;
+      left: 75%;
+    }
+
+    body>div:nth-child(8){
+      position: absolute;
+      width: 12%;
+      height: 9%;
+      top: 40%;
+        border: 1px solid black;
+      left: 87%;
+    }
+
+    #playBtn{
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+
+
+  </style>
+
+
+</head>
+<body>
+
+<div id="firstDiv"></div>
+<div id="secondDiv"></div>
+<div id="threeDiv"></div>
+<div id="forthdiv"></div>
+<div id="fiveDiv"></div>
+<div id="fiveDiv"></div>
+<div id="fiveDiv"></div>
+<div id="fiveDiv"></div>
+
+<audio id="myAudio" src="audio/WhatsApp Audio 2023-10-04 at 20.38.22_e0226ca7.mp3"></audio>
+
+<button id="playBtn" onclick="playAudio()">Play</button>
+<button id="pauseBtn" onclick="pauseAudio()">Pause</button>
+<button id="stopBtn" onclick="stopAudio()">Stop</button>
+
+
+<script>
+
+    let colours=["white","white","white","#EF5050","red","#EF5050","white","white"];
+    let all=document.querySelectorAll("div");
+
+
+    setInterval(
+        function (){
+            var lastCol=colours.pop();
+            colours.unshift(lastCol);
+
+            for (let i in colours) {
+
+                all[i].style.background=colours[i];
+
+            }
+        },100
+    )
+
+
+
+    const audio = document.getElementById('myAudio');
+
+    function playAudio() {
+    audio.play();
+  }
+
+  // Function to pause the audio
+  function pauseAudio() {
+    audio.pause();
+  }
+
+  // Function to stop the audio (pause and reset to the beginning)
+  function stopAudio() {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+
+  audio= document.getElementById('myAudio'); // Get the audio element
+  audio.volume = 0.9;
+
+
+
+</script>
+
+</body>
+</html>
