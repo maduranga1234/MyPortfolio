@@ -75,11 +75,11 @@
     </div>
 
     <div id="btnDiv" style="position: absolute;right:2%;top:45%;">
-        <button id="CustSaveBTN" type="button" class="btn btn-success">Save   </button>
+        <button id="CustSaveBTN" type="button" class="btn btn-success">Save</button>
 
         <button type="button" class="btn btn-primary m-lg-4">Update</button>
 
-        <button type="button" class="btn btn-danger">Delete </button>
+        <button type="button" class="btn btn-danger">Delete</button>
 
     </div>
 
@@ -94,60 +94,7 @@
         </tr>
         </thead>
         <tbody id="tBdy">
-        <tr>
-            <th scope="row">C001</th>
-            <td>Maduranga</td>
-            <td>Galle</td>
-            <td>0765591043</td>
-            <td>madurangasadaruwan393@gmail.com</td>
-        </tr>
-        <tr>
-            <th scope="row">C002</th>
-            <td>Maduranga</td>
-            <td>Galle</td>
-            <td>0765591043</td>
-            <td>madurangasadaruwan393@gmail.com</td>
-        </tr>
 
-        <tr>
-            <th scope="row">C003</th>
-            <td>Maduranga</td>
-            <td>Galle</td>
-            <td>0765591043</td>
-            <td>madurangasadaruwan393@gmail.com</td>
-        </tr>
-
-        <tr>
-            <th scope="row">C004</th>
-            <td>Maduranga</td>
-            <td>Galle</td>
-            <td>0765591043</td>
-            <td>madurangasadaruwan393@gmail.com</td>
-        </tr>
-
-        <tr>
-            <th scope="row">C005</th>
-            <td>Maduranga</td>
-            <td>Galle</td>
-            <td>0765591043</td>
-            <td>madurangasadaruwan393@gmail.com</td>
-        </tr>
-
-        <tr>
-            <th scope="row">C003</th>
-            <td>Maduranga</td>
-            <td>Galle</td>
-            <td>0765591043</td>
-            <td>madurangasadaruwan393@gmail.com</td>
-        </tr>
-
-        <tr>
-            <th scope="row">C003</th>
-            <td>Maduranga</td>
-            <td>Galle</td>
-            <td>0765591043</td>
-            <td>madurangasadaruwan393@gmail.com</td>
-        </tr>
         </tbody>
     </table>
 </section>
@@ -180,13 +127,13 @@
     <div class="container text-center">
         <div class="row">
 
-            <form  class="d-flex col-3" role="search" style=" position: absolute;top:12%;left: 74%;">
+            <form class="d-flex col-3" role="search" style=" position: absolute;top:12%;left: 74%;">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-danger " fdprocessedid="prr3r4" type="submit">Search</button>
             </form>
 
 
-            <div  class="col-3" style="   position: absolute;top:20%; left: 2%;">
+            <div class="col-3" style="   position: absolute;top:20%; left: 2%;">
                 <label for="id" class="form-label"></label>
                 <input type="email" class="form-control" id="ItemId" placeholder="Id">
             </div>
@@ -196,17 +143,17 @@
                 <input type="email" class="form-control" id="Item name" placeholder="Item name">
             </div>
 
-            <div  class="col-4" style=" position: absolute;top:20%; left: 66%;">
+            <div class="col-4" style=" position: absolute;top:20%; left: 66%;">
                 <label for="Unit price" class="form-label"></label>
                 <input type="email" class="form-control" id="Unit price" placeholder="Unit price">
             </div>
 
-            <div  class="col-4" style="position: absolute; top:35%; left: 33%;">
+            <div class="col-4" style="position: absolute; top:35%; left: 33%;">
                 <label for="Qty" class="form-label"></label>
                 <input type="email" class="form-control" id="Qty" placeholder="Qty">
             </div>
 
-            <div  class="col-4" style=" position: absolute;top:35%; left: 66%;">
+            <div class="col-4" style=" position: absolute;top:35%; left: 66%;">
                 <label for="Quality" class="form-label"></label>
                 <input type="email" class="form-control" id="Quality" placeholder="Quality">
             </div>
@@ -215,15 +162,15 @@
     </div>
 
     <div style=" position: absolute;right:2%;top:45%;">
-        <button type="button" class="btn btn-success">Save   </button>
+        <button type="button" class="btn btn-success">Save</button>
 
         <button type="button" class="btn btn-primary m-lg-4">Update</button>
 
-        <button type="button" class="btn btn-danger">Delete </button>
+        <button type="button" class="btn btn-danger">Delete</button>
 
     </div>
 
-    <table  class="table mt-5 border" style=" position: absolute;top: 50%;">
+    <table class="table mt-5 border" style=" position: absolute;top: 50%;">
         <thead>
         <tr>
             <th scope="col">Id</th>
@@ -393,7 +340,8 @@
                     </div>
                     <div class="col-12">
                         <label for="qty" class="form-label">OrderQty :</label>
-                        <input type="text" id="Itemqty" class="form-control" placeholder="OrderQty" aria-label="Last name">
+                        <input type="text" id="Itemqty" class="form-control" placeholder="OrderQty"
+                               aria-label="Last name">
                     </div>
 
                 </div>
@@ -466,14 +414,12 @@
 
     </div>
 
-    <div  class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
         <button type="button" class="btn btn-success" style="width: 30%;">Purchase</button>
     </div>
 
 
 </section>
-
-
 
 
 <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
@@ -482,9 +428,9 @@
         let selectedSection = sessionStorage.getItem("selectedSection");
         if (selectedSection) {
             document.querySelectorAll("body>section").forEach(section => {
-                section.style.display="none";
+                section.style.display = "none";
             });
-            document.getElementById(selectedSection).style.display="block";
+            document.getElementById(selectedSection).style.display = "block";
         } else {
             navigate("order");
         }
@@ -524,9 +470,6 @@
     );
 
 
-
-
-
     //customers
     document.querySelector("#customer>nav>div:nth-child(3)>a").addEventListener(
         "click", function () {
@@ -544,60 +487,51 @@
     );
 
 
-
-
-    document.getElementById("CustSaveBTN").addEventListener("click",function () {
+    document.getElementById("CustSaveBTN").addEventListener("click", function () {
 
         var customers = [];
 
         var customer = {
 
-            custId1:  document.querySelector("#id").value,
-            custName1:  document.querySelector("#name").value,
-            custAddress1:  document.querySelector("#address").value,
-            custContact1:  document.querySelector("#tp").value,
+            custId1: document.querySelector("#id").value,
+            custName1: document.querySelector("#name").value,
+            custAddress1: document.querySelector("#address").value,
+            custContact1: document.querySelector("#tp").value,
             custEmail: document.querySelector("#email").value
 
         }
 
         customers.push[customer];
 
+        let table = document.getElementById("Custtable");
+        let tBody = table.getElementsByTagName("tbody")[0];
 
-        let table=document.getElementById("Custtable");
-        let tBody=table.getElementsByTagName("tbody")[0];
-
-
-          let tRow=document.createElement("tr");
-
-        let tcall1=document.createElement("td");
-        tcall1.textContent=customer.custId1;
+        let tRow = document.createElement("tr");
+        let tcall1 = document.createElement("td");
+        tcall1.textContent = customer.custId1;
         tRow.appendChild(tcall1);
 
-        let tcall2=document.createElement("td");
-        tcall2.textContent=customer.custName1;
+        let tcall2 = document.createElement("td");
+        tcall2.textContent = customer.custName1;
         tRow.appendChild(tcall2);
 
-        let tcall3=document.createElement("td");
-        tcall3.textContent=customer.custAddress1;
+        let tcall3 = document.createElement("td");
+        tcall3.textContent = customer.custAddress1;
         tRow.appendChild(tcall3);
 
-        let tcall4=document.createElement("td");
-        tcall4.textContent=customer.custContact1;
+        let tcall4 = document.createElement("td");
+        tcall4.textContent = customer.custContact1;
         tRow.appendChild(tcall4);
 
-        let tcall5=document.createElement("td");
-        tcall5.textContent=customer.custEmail;
+        let tcall5 = document.createElement("td");
+        tcall5.textContent = customer.custEmail;
         tRow.appendChild(tcall5);
-
-
-
         tBody.appendChild(tRow);
 
-
-
-
+        document.querySelector("#id").value=null;
 
     });
+
 
 
 

@@ -7,7 +7,7 @@
 
     body{
       position: relative;
-    background-color: rgb(235, 235, 235);
+    background-color: blue;
       height: 100vh;
     }
 
@@ -65,23 +65,7 @@
       left: 63%;
     }
 
-    body>div:nth-child(7){
-      position: absolute;
-      width: 12%;
-      height: 9%;
-      top: 40%;
-        border: 1px solid black;
-      left: 75%;
-    }
 
-    body>div:nth-child(8){
-      position: absolute;
-      width: 12%;
-      height: 9%;
-      top: 40%;
-        border: 1px solid black;
-      left: 87%;
-    }
 
     #playBtn{
         margin-top: 10%;
@@ -89,8 +73,40 @@
     }
 
 
+    #hGroup{
+        position:absolute;
+        top:0;
+        left: 52%;
+
+    }
+
+    #hGroup1{
+        position:absolute;
+        top:0;
+        left: 26%;
+
+    }
+
+#bar{
+    position:absolute;
+    bottom:20%;
+    left: 26%;
+}
+
+#playBtn{
+    position:absolute;
+    bottom:31%;
+    left: 32%;
+}
+
+#stopBtn{
+    position:absolute;
+    bottom:31%;
+    left: 44%;
+}
 
   </style>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
 
 
 </head>
@@ -102,34 +118,117 @@
 <div id="forthdiv"></div>
 <div id="fiveDiv"></div>
 <div id="fiveDiv"></div>
-<div id="fiveDiv"></div>
-<div id="fiveDiv"></div>
+
 
 <audio id="myAudio" src="audio/WhatsApp Audio 2023-10-04 at 20.38.22_e0226ca7.mp3"></audio>
 
-<button id="playBtn" onclick="playAudio()">Play</button>
-<button id="pauseBtn" onclick="pauseAudio()">Pause</button>
-<button id="stopBtn" onclick="stopAudio()">Stop</button>
+
+<button id="playBtn" type="button" onclick="playAudio()" class="btn btn-success">Start</button>
+<button id="stopBtn" type="button" onclick="stopAudio()" class="btn btn-danger">Stop</button>
+
+
+
+
+
+
+<section id="hGroup">
+    <h1 id="h1" style="color:red">50</h1>
+    <h2 id="h2" style="color:blue">1750</h2>
+</section>
+
+<section id="hGroup1">
+    <h1 id="h1Lbl" style="color:red">Speed :</h1>
+    <h2 id="h2Lbl" style="color:blue">Waiting Time :</h2>
+</section>
+
+<section id="bar" class="col-4 py-2 ">
+    <input type="range" class="form-range bg-white px-4 rounded-3" id="range"  min="30" max="70" value="50" step="1" style="height: 100%">
+</section>
 
 
 <script>
 
-    let colours=["white","white","white","#EF5050","red","#EF5050","white","white"];
+    let colours=[  "#FE0000",
+        "#FD2822",
+        "#FD3D38",
+        "#FE5F59",
+        "#FE938D",
+        "#ffb7b3"];
+
+
+    let fillColor=[];
     let all=document.querySelectorAll("div");
 
+    let rangeVal= document.getElementById("range");
 
-    setInterval(
-        function (){
-            var lastCol=colours.pop();
-            colours.unshift(lastCol);
 
-            for (let i in colours) {
 
-                all[i].style.background=colours[i];
+    let waiting_point_count = 0;
+    let count=0;
+    let c2=0;
+    let timerInterval;
+    let timerTimeout;
+    let speed=50;
+    let delay=2000;
 
+    function startInterval(){
+        timerInterval = setInterval(function () {
+
+            if(count==24){
+                count=0;
+                c2=0;
+                fillColor=[];
+                waiting_point_count++;
+                console.log(waiting_point_count);
+                if(waiting_point_count==2){
+                    waiting_point_count=0;
+                    clearInterval(timerInterval);
+                    timerTimeout= setTimeout(function (){
+                        startInterval();
+                    },delay);
+                }
+            }else if(count>=18){
+                fillColor.shift();
+                fillColor.push("white");
+                count++;
+            }else if(count>=12){
+                fillColor.shift();
+                fillColor.push(colours[c2++]);
+                count++;
+            }else if(count>=6){
+                fillColor.pop();
+                fillColor.unshift("white");
+                count++;
+            }else{
+                fillColor.unshift(colours[count++]);
             }
-        },100
-    )
+
+            // console.log(count);
+            // console.log(count,changingColors);
+            for (let i = 0; i < fillColor.length; i++) {
+                all[i].style.background = fillColor[i];
+            }
+        }, speed);
+    }
+
+    document.getElementById("range").addEventListener('input',function (){
+
+        let getSpeed=document.getElementById("range").value;
+        speed=getSpeed;
+        let rangeValue;
+        delay=getSpeed*35;
+
+        console.log(speed);
+
+        document.getElementById("h1").innerText=getSpeed;
+        document.getElementById("h2").innerText=delay;
+
+
+
+
+    });
+
+
 
 
 
@@ -137,17 +236,17 @@
 
     function playAudio() {
     audio.play();
+    startInterval();
   }
 
   // Function to pause the audio
-  function pauseAudio() {
-    audio.pause();
-  }
 
   // Function to stop the audio (pause and reset to the beginning)
   function stopAudio() {
     audio.pause();
     audio.currentTime = 0;
+      clearTimeout(timerTimeout);
+      clearInterval(timerInterval);
   }
 
   audio= document.getElementById('myAudio'); // Get the audio element
