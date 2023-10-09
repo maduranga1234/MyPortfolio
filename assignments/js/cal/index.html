@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+
+
+        body>section{
+            background-color: #000000;
+
+        }
+
+        .calculator {
+
+
+
+            width: 362px;
+            height: 408px;
+            margin: 0 auto;
+            padding: 13px;
+            background-color: #1aedff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 70px; /* Set the width of calculator buttons */
+            height: 70px; /* Set the height of calculator buttons */
+            font-size: 20px; /* Set the font size for buttons */
+            margin: 5px; /* Add some margin between buttons */
+        }
+        #display {
+            width: 77%;
+            height: 60px;
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 10px;
+            margin-left: 73px;
+        }
+
+
+
+        #C{
+            position: absolute;
+            top: 57px;
+            left: 502px;
+            height: 59px;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+    <button id="C" class="btn btn-success" onclick="clearDisplay()">C</button>
+    <div class="calculator">
+
+
+        <input type="text" class="form-control display" id="display" readonly>
+
+
+        <button class="btn btn-dark" onclick="appendToDisplay('7')">7</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('8')">8</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('9')">9</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('/')">/</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('4')">4</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('5')">5</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('6')">6</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('*')">*</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('1')">1</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('2')">2</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('3')">3</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('-')">-</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('.')">.</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('0')">0</button>
+        <button class="btn btn-dark" onclick="calculate()">=</button>
+        <button class="btn btn-dark" onclick="appendToDisplay('+')">+</button>
+    </div>
+</div>
+
+<script>
+
+    const display = document.getElementById('display');
+    let currentExpression = '';
+
+
+    function appendToDisplay(char) {
+        currentExpression += char;
+        display.value = currentExpression;
+    }
+
+
+    function clearDisplay() {
+        currentExpression = '';
+        display.value = null;
+    }
+
+
+    function calculate() {
+
+            const result = eval(currentExpression);
+            display.value = result;
+            currentExpression = result.toString();
+
+    }
+</script>
+
+<script src="../assets/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
