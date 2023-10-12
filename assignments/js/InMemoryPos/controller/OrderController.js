@@ -25,7 +25,7 @@ selectElement.addEventListener("change", function () {
 
 // item side
 
-let selectItemElement = document.getElementById("IteminputState");
+let selectItemElement = document.getElementById("inputState1");
 
 itemDB.forEach(function(item) {
     let option = document.createElement("option");
@@ -41,9 +41,9 @@ selectItemElement.addEventListener("change", function () {
     });
     if (selectedItem) {
         alert(selectedItem.code);
-        $("#ItemIdSetOrder").val(selectedItem.code);
-        $("#ItemNameSetOrder").val(selectedItem.description);
-        $("#ItemPriceSetOrder").val(selectedItem.unitPrice);
-        $("#ItemQTYSetOrder").val(selectedItem.qtyOnHand);
+        $("#OrderitemName").val(selectedItem.name);
+        $("#OrderUnitprice").val(selectedItem.unitPrice);
+        $("#qtyH").val(selectedItem.qtyOnHand);
+        $("#qlity").val(selectedItem.qlity);
     }
 });
