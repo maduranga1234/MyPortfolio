@@ -5,3 +5,11 @@ let item={
     qtyOnHand:0,
     qlity:""
 }
+
+let itemToOrder={
+    itemCode:"",
+    itemName:"",
+    itemPrice:0,
+    itemQTYChoice:0,
+    totalPrice:0
+}

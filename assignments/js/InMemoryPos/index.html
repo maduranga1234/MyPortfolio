@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Bootstrap</title>
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <style>
 
-
     </style>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
 
 </head>
 <body>
@@ -102,7 +101,6 @@
     </table>
 </section>
 
-
 <section id="item" style="display: none;">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -191,7 +189,6 @@
 
 </section>
 
-
 <section id="order">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -229,9 +226,8 @@
                     </div>
                     <div class="col-6">
                         <label for="date" class="form-label">Order Date :</label>
-                        <input type="date" id="date" class="form-control" placeholder="Order Date" aria-label="Order Date">
-
-
+                        <input type="date" id="date" class="form-control" placeholder="Order Date"
+                               aria-label="Order Date">
                     </div>
                     <div class="col-6">
                         <label for="inputState" class="form-label">Customer :</label>
@@ -295,8 +291,8 @@
 
                     <div style="display: flex">
                         <label id="qtymassage" class="form-label" style="font-size: 12px; color: red; display: none">Please enter amount lower than :</label>
-                        <label id="countQty" style="position:relative;font-size: 12px; color: red; left:1%; display: none"> </label>
-                        </div>
+                        <label id="h1hello" style="position:relative;font-size: 12px; color: red; left:1%; display: none"> </label>
+                    </div>
 
                 </div>
                 <div class="d-flex justify-content-center">
@@ -305,8 +301,8 @@
             </div>
             <div class="col-12 col-md-4  mt-3 p-3 "
                  style="border-radius: 10px; border: 2px solid #00a749">
-                <h2 style="color: #02a759">Total : RS <span>520.00</span>/=</h2>
-                <h2 style=" color: #c7bf00">SubTotal :RS <span>80 </span>/=</h2>
+                <h2 style="color: #02a759">Total : RS <span id="lableTotPrice" >520.00</span>/=</h2>
+                <h2  style=" color: #c7bf00">SubTotal :RS <span id="lableSubTotal">80 </span>/=</h2>
                 <div class="row g-2">
                     <div class="col-12">
                         <label for="cash" class="form-label">Cash :</label>
@@ -319,11 +315,16 @@
                                aria-label="Last name">
                     </div>
 
+                    <div class="col-12">
+                        <label for="Discount" class="form-label">Discount :</label>
+                        <input type="text" id="Discount" class="form-control" placeholder="Discount"
+                               aria-label="Last name">
+                    </div>
 
                     <div style="display: flex">
                         <label id="cashLOwMasse" class="form-label" style="font-size: 12px; color: red; display: none">Please enter amount greater than :</label>
                         <label id="cashShow" style="position:relative;font-size: 12px; color: red; left:1%; display: none"> </label>
-                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -333,7 +334,7 @@
 
     <!--Table-->
     <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
-        <table class="table table-bordered table-hover table-striped-columns ">
+        <table id="clickTable" class="table table-bordered table-hover table-striped-columns ">
             <thead>
             <tr class="table mt-5 p-3 ">
 
@@ -345,29 +346,7 @@
             </tr>
             </thead>
             <tbody id="orderTbdy">
-            <tr>
-                <th>O001</th>
-                <td>Tomato</td>
-                <td>250</td>
-                <td>3</td>
-                <td>900</td>
-            </tr>
 
-            <tr>
-                <th>O002</th>
-                <td>Papaya</td>
-                <td>120</td>
-                <td>2</td>
-                <td>240</td>
-            </tr>
-
-            <tr>
-                <th>O002</th>
-                <td>Papaya</td>
-                <td>120</td>
-                <td>2</td>
-                <td>240</td>
-            </tr>
 
             </tbody>
         </table>
@@ -375,15 +354,16 @@
     </div>
 
     <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-success" style="width: 30%;">Purchase</button>
+        <button id="puches" type="button" class="btn btn-success" style="width: 30%;">Purchase</button>
     </div>
 
 
 </section>
 
-
 <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
 <script src="assets/js/jquery-3.7.1.min.js"></script>
+
 <script>
     window.onload = function (event) {
         let selectedSection = sessionStorage.getItem("selectedSection");
@@ -622,6 +602,8 @@
 
 <script src="controller/OrderController.js"></script>
 <script src="controller/validation/OrderValidation.js"></script>
+
+
 
 
 
