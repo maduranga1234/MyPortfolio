@@ -51,6 +51,7 @@ function checkValidation() {
     var inputValueDate = inputFieldDate.value.trim();
     var inputFieldorder = document.getElementById("OrderItemqty");
     var inputValueorder = inputFieldorder.value.trim();
+
     if (inputValue === "" || inputValue2 === "" || inputValueDate === "" || inputValueorder === "") {
         if (inputValue === "") {
             $("#inputState1").css({

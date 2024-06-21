@@ -1,5 +1,5 @@
 const Cust_ID_Check = /^(C00-)[0-9]{3}$/;
-const Cust_Name_Check = /^[A-Za-z ]{5,}$/;
+const Cust_Name_Check = /^[A-Za-z ]{4,}$/;
 const Cust_Address_Check = /^[A-Za-z0-9 ]{5,}$/;
 const Contact_Number_Check = /^\d{10}$/;
 const Email_Check = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
